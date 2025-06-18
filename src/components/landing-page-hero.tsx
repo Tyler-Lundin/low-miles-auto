@@ -28,33 +28,32 @@ export default function LandingPageHero() {
 
       {/* Main Content Container */}
 
-          <HeroContent />
-          <TrustSignals />
+      <HeroContent />
+      <TrustSignals />
 
     </div>
   );
 }
 
 function HeroContent() {
-  return(
+  return (
     <>
-          <div className="z-10 mx-auto max-w-5xl px-6 lg:px-8 pb-4">
+      <div className="z-10 mx-auto max-w-5xl px-6 lg:px-8 pb-4">
         <div className="grid place-items-center gap-4 h-fit rounded-md p-4 w-full">
           {/* Main Headline */}
           <Logo size="lg" />
-
-          {/* Tagline */}
-          <a href={`https://maps.app.goo.gl/X6ATVYXhWdu1xYMBA`} target="_blank" rel="noopener noreferrer" className="w-fit">
-            <p className="flex items-center gap-x-2 text-sm text-black/80 dark:text-white/80">
-              Directions
-              <LuMapPin className="w-4 h-4" />
-          </p>
-          </a>
 
           {/* Call to Action Button */}
           <div className=" flex items-center justify-center gap-x-6">
             <LandingPageCta text="View Inventory" href="/inventory" />
           </div>
+          {/* Tagline */}
+          <a href={`https://maps.app.goo.gl/X6ATVYXhWdu1xYMBA`} target="_blank" rel="noopener noreferrer" className="w-fit border border-black/50 dark:border-white/50 px-4 py-1 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-300">
+            <p className="flex items-center gap-x-2 text-sm text-black/80 dark:text-white/80">
+              Directions
+              <LuMapPin className="w-4 h-4" />
+            </p>
+          </a>
         </div>
       </div>
     </>
