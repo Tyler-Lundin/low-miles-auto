@@ -1,5 +1,4 @@
 "use client";
-import { COMPANY_ADDRESS } from "../../site.config";
 import LandingPageCta from "./landing-page-cta";
 import Image from "next/image";
 import Logo from "./logo";
