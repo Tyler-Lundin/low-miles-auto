@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+
+\geometry{a4paper, margin=1in}
+
+% --- Customization ---
+\newcommand{\dealerName}{Low Miles Auto}
+\newcommand{\dealerAddress}{6274 Highway 291 Nine Mile Falls, WA}
+\newcommand{\dealerPhone}{(555) 123-4567}
+
+% --- Section Formatting ---
+\titleformat{\section}
+  {\normalfont\Large\bfseries\scshape}
+  {\thesection}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{1.5\baselineskip}{1\baselineskip}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \bfseries \dealerName} \\
+    \vspace{2mm}
+    {\large \faMapMarkerAlt \hspace{1mm} \dealerAddress \quad \faPhone \hspace{1mm} \dealerPhone}
+\end{center}
+
+\section*{Customer Information Sheet}
+\label{sec:customer-info}
+
+Please complete the following form to help us expedite your vehicle purchase process. All information is kept confidential.
+
+\subsection*{Primary Buyer Information}
+
+\noindent\textbf{Full Legal Name:} \hrulefill \\
+\vspace{6mm}
+\noindent\textbf{Current Street Address:} \hrulefill \\
+\vspace{6mm}
+\noindent\textbf{City:} \hrulefill \quad \textbf{State:} \hrulefill \quad \textbf{ZIP Code:} \hrulefill \\
+\vspace{6mm}
+\noindent\textbf{Primary Phone Number:} \hrulefill \quad \textbf{Email Address:} \hrulefill \\
+\vspace{6mm}
+\noindent\textbf{Driver's License Number:} \hrulefill \quad \textbf{State of Issue:} \hrulefill \\
+\vspace{6mm}
+\noindent\textbf{Date of Birth:} \hrulefill
+
+\subsection*{Vehicle of Interest (if known)}
+
+\noindent\textbf{Year:} \hrulefill \quad \textbf{Make:} \hrulefill \quad \textbf{Model:} \hrulefill \\
+\vspace{6mm}
+\noindent\textbf{Stock \# or VIN:} \hrulefill
+
+\vspace{12mm}
+
+\noindent Signature: \hrulefill \quad Date: \hrulefill
+
+\end{document}
