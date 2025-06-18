@@ -46,7 +46,7 @@ function HeroContent() {
           {/* Tagline */}
           <a href={`https://maps.app.goo.gl/X6ATVYXhWdu1xYMBA`} target="_blank" rel="noopener noreferrer" className="w-fit">
             <p className="flex items-center gap-x-2 text-sm text-black/80 dark:text-white/80">
-              {COMPANY_ADDRESS}
+              Directions
               <LuMapPin className="w-4 h-4" />
           </p>
           </a>
