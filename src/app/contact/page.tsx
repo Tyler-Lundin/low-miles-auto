@@ -1,4 +1,4 @@
-import { COMPANY_PHONE } from "../../../site.config";
+import { COMPANY_ADDRESS, COMPANY_PHONE } from "../../../site.config";
 
 export default function ContactPage() {
     return (
@@ -67,8 +67,7 @@ export default function ContactPage() {
 
                     <h2 className="text-2xl font-semibold mt-8 mb-4 text-gray-900 dark:text-white">Location</h2>
                     <div className="space-y-2 text-gray-700 dark:text-gray-300">
-                        <p>6274 Highway 291</p>
-                        <p>Nine Mile Falls, WA 99026</p>
+                        <p>{COMPANY_ADDRESS}</p>
                         <p>Phone: <a href={`tel:${COMPANY_PHONE}`} className="text-amber-600 dark:text-amber-500 hover:text-amber-700 dark:hover:text-amber-600">{COMPANY_PHONE}</a></p>
                     </div>
                 </section>
