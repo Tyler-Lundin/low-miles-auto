@@ -5,7 +5,7 @@ export default function Logo({ size = "md" }: { size?: "sm" | "md" | "lg" | "lan
   const logoSize = () => {
     switch (size) {
       case "sm":
-        return 75;
+        return 50;
       case "md":
         return 100;
       case "lg":
@@ -18,7 +18,7 @@ export default function Logo({ size = "md" }: { size?: "sm" | "md" | "lg" | "lan
   }
   return (
     <div className={`flex items-center gap-1 relative px-2 py-1 text-black ${size === "sm" ? "text-xs" : size === "md" ? "text-sm" : "text-lg"}`}>
-      <Image src="/images/low-miles-auto-logo.png" alt="Logo" width={logoSize()} height={logoSize()} className="grayscale brightness-50 dark:brightness-100 dark:invert"/>
+      <Image src={ size === "sm" ? "/images/low-miles-auto-logo-sm.png" : "/images/low-miles-auto-logo.png" } alt="Logo" width={logoSize()} height={logoSize()} className="grayscale brightness-50 dark:brightness-100 dark:invert"/>
     </div>
   );
 }
